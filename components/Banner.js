@@ -4,6 +4,7 @@ import {
     FaLinkedin,
     FaGithub,
     FaPaperPlane,
+    FaWordpress,
 } from 'react-icons/fa'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
@@ -57,6 +58,9 @@ const styles = {
         fontFamily: 'gruppo',
         fontWeight: '700',
         color: '#783f8e',
+        '&:hover': {
+            color: '#783f8e',
+        },
     },
     pos: {
         marginBottom: 12,
@@ -123,6 +127,14 @@ const Banner = ({ classes }) => (
                     }}
                 >
                     <FaPaperPlane size="3rem" color="#333" />
+                </a>
+                <a
+                    href="https://krarvindblog.wordpress.com/"
+                    style={{
+                        marginLeft: '10px',
+                    }}
+                >
+                    <FaWordpress size="3rem" />
                 </a>
             </CardActions>
         </Card>
