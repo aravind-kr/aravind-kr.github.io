@@ -6,4 +6,5 @@ module.exports = {
         config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
         return config
     },
+    // assetPrefix: process.env.NODE_ENV === 'production' ? '/{reponame}' : '',
 }
