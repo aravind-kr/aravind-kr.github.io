@@ -3,11 +3,21 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import Meta from './Meta'
 import Navigation from './Nav'
 import globalTheme from '../static/theme'
+import Particle from './Particle'
+import Banner from './Banner'
+import { relative } from 'path'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'radnika_next';
     src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'gruppo';
+    src: url('/static/Gruppo-Regular.ttf');
     font-weight: normal;
     font-style: normal;
   }
@@ -47,6 +57,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
+    background: 'linear-gradient(to right top, #e5e7eb, #e1e4e7, #dde1e3, #daddde, #d7dada)';
     ${'' /* font-family: 'radnika_next'; */}
   }
 
@@ -64,9 +75,18 @@ class Page extends Component {
         return (
             <ThemeProvider theme={globalTheme}>
                 <div>
+                    <GlobalStyle />
                     <Meta />
                     <Navigation />
-                    <GlobalStyle />
+                    <div
+                        style={{
+                            // position: 'relative',
+                            height: '560px',
+                        }}
+                    >
+                        <Particle />
+                        <Banner />
+                    </div>
                     {this.props.children}
                 </div>
             </ThemeProvider>

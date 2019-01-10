@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 
 const NavDiv = styled.div`
     width: 100%;
@@ -55,7 +50,7 @@ const NavBar = styled.div`
     right: 5%;
     height: inherit;
     button {
-        color: ${props => props.theme.textMedium};
+        color: '#212121'
     }
     @media (max-width: 768px) {
         position: relative;
@@ -82,11 +77,12 @@ export default class Navigation extends Component {
                         <Button
                             style={{
                                 fontSize: '14px',
+                                fontWeight: '750',
                                 marginTop: '8px',
                                 paddingLeft: '10px',
                                 paddingRight: '10px',
                                 textAlign: 'center',
-                                fontFamily: 'garamond-light',
+                                fontFamily: 'gruppo',
                             }}
                         >
                             Blog
@@ -94,11 +90,12 @@ export default class Navigation extends Component {
                         <Button
                             style={{
                                 fontSize: '14px',
+                                fontWeight: '750',
                                 marginTop: '8px',
                                 paddingLeft: '10px',
                                 paddingRight: '10px',
                                 textAlign: 'center',
-                                fontFamily: 'garamond-light',
+                                fontFamily: 'gruppo',
                             }}
                         >
                             Projects
@@ -106,11 +103,12 @@ export default class Navigation extends Component {
                         <Button
                             style={{
                                 fontSize: '14px',
+                                fontWeight: '750',
                                 marginTop: '8px',
                                 paddingLeft: '10px',
                                 paddingRight: '10px',
                                 textAlign: 'center',
-                                fontFamily: 'garamond-light',
+                                fontFamily: 'gruppo',
                             }}
                         >
                             Publication
@@ -118,11 +116,12 @@ export default class Navigation extends Component {
                         <Button
                             style={{
                                 fontSize: '14px',
+                                fontWeight: '750',
                                 marginTop: '8px',
                                 paddingLeft: '10px',
                                 paddingRight: '10px',
                                 textAlign: 'center',
-                                fontFamily: 'garamond-light',
+                                fontFamily: 'gruppo',
                             }}
                         >
                             Contact
