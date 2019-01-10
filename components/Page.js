@@ -5,6 +5,7 @@ import Navigation from './Nav'
 import globalTheme from '../static/theme'
 import Particle from './Particle'
 import Banner from './Banner'
+import Footer from "./Footer";
 import { relative } from 'path'
 
 const GlobalStyle = createGlobalStyle`
@@ -88,6 +89,7 @@ class Page extends Component {
                         <Banner />
                     </div>
                     {this.props.children}
+                    <Footer />
                 </div>
             </ThemeProvider>
         )
