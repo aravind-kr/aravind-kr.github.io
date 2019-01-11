@@ -93,6 +93,7 @@ var Blog = function Blog(_ref) {
   var classes = _ref.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.outerDiv,
+    id: "blog",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
@@ -362,6 +363,7 @@ var Contact = function Contact(_ref) {
   var classes = _ref.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.outerDiv,
+    id: "contact",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
@@ -622,6 +624,7 @@ var Project = function Project(_ref) {
   var classes = _ref.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.outerDiv,
+    id: "projects",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
@@ -836,6 +839,7 @@ var Publication = function Publication(_ref) {
   var classes = _ref.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.outerDiv,
+    id: "publication",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
