@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
+import { inherits } from 'util'
 
 const NavDiv = styled.div`
     width: 100%;
@@ -50,7 +51,7 @@ const NavBar = styled.div`
     right: 5%;
     height: inherit;
     button {
-        color: '#212121'
+        color: '#212121';
     }
     @media (max-width: 768px) {
         position: relative;
@@ -85,7 +86,15 @@ export default class Navigation extends Component {
                                 fontFamily: 'gruppo',
                             }}
                         >
-                            Blog
+                            <a
+                                href="#blog"
+                                style={{
+                                    color: 'inherit',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                Blog
+                            </a>
                         </Button>
                         <Button
                             style={{
@@ -98,7 +107,15 @@ export default class Navigation extends Component {
                                 fontFamily: 'gruppo',
                             }}
                         >
-                            Projects
+                            <a
+                                href="#projects"
+                                style={{
+                                    color: 'inherit',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                Projects
+                            </a>
                         </Button>
                         <Button
                             style={{
@@ -111,7 +128,15 @@ export default class Navigation extends Component {
                                 fontFamily: 'gruppo',
                             }}
                         >
-                            Publication
+                            <a
+                                href="#publication"
+                                style={{
+                                    color: 'inherit',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                Publication
+                            </a>
                         </Button>
                         <Button
                             style={{
@@ -124,7 +149,15 @@ export default class Navigation extends Component {
                                 fontFamily: 'gruppo',
                             }}
                         >
-                            Contact
+                            <a
+                                href="#contact"
+                                style={{
+                                    color: 'inherit',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                Contact
+                            </a>
                         </Button>
                     </NavBarInner>
                 </NavBar>

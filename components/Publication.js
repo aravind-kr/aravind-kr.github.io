@@ -46,7 +46,7 @@ const styles = {
 }
 
 const Publication = ({ classes }) => (
-    <div className={classes.outerDiv}>
+    <div className={classes.outerDiv} id="publication">
         <div>
             <FaScroll
                 size="3rem"

@@ -55,7 +55,7 @@ const styles = {
 }
 
 const Contact = ({ classes }) => (
-    <div className={classes.outerDiv}>
+    <div className={classes.outerDiv} id="contact">
         <div>
             <FaAddressBook
                 size="3rem"

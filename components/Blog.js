@@ -58,7 +58,7 @@ const styles = {
 }
 
 const Blog = ({ classes }) => (
-    <div className={classes.outerDiv}>
+    <div className={classes.outerDiv} id="blog">
         <div>
             <FaWordpress
                 size="3rem"

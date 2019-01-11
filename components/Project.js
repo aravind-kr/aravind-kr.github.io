@@ -45,7 +45,7 @@ const styles = {
 }
 
 const Project = ({ classes }) => (
-    <div className={classes.outerDiv}>
+    <div className={classes.outerDiv} id="projects">
         <div>
             <FaGitlab
                 size="3rem"
