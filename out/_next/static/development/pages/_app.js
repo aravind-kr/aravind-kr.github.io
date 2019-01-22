@@ -40,12 +40,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var styles = {
-  outerDiv: {
+  outerDiv: _defineProperty({
     position: 'absolute',
     left: '30%',
     top: '35%',
     width: '40%'
-  },
+  }, '@media (max-width:780px)', {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }),
   card: {
     minWidth: 275
   },
@@ -91,20 +95,20 @@ var Banner = function Banner(_ref) {
     className: classes.outerDiv,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 76
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: classes.card,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 77
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 78
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -112,14 +116,14 @@ var Banner = function Banner(_ref) {
     color: "textSecondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 79
     },
     __self: this
   }, "Hello", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classes.exclam,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 81
     },
     __self: this
   }, "!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -127,7 +131,7 @@ var Banner = function Banner(_ref) {
     className: classes.body,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }, "I am", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -135,13 +139,13 @@ var Banner = function Banner(_ref) {
     href: "https://twitter.com/arvindsmvec",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 85
     },
     __self: this
   }, "Aravind"), ",", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 91
     },
     __self: this
   }), "I work as a Fullstack Developer at", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -149,13 +153,13 @@ var Banner = function Banner(_ref) {
     href: "https://smartron.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 92
     },
     __self: this
   }, "Smartron"), ". My Passion lies in Deep Learning and Natural Language Processing.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 102
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -166,14 +170,14 @@ var Banner = function Banner(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 103
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaTwitterSquare"], {
     size: "3rem",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 110
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -183,7 +187,7 @@ var Banner = function Banner(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 112
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaGithub"], {
@@ -191,7 +195,7 @@ var Banner = function Banner(_ref) {
     color: "#333",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 118
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -201,14 +205,14 @@ var Banner = function Banner(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 120
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaLinkedin"], {
     size: "3rem",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 126
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -218,7 +222,7 @@ var Banner = function Banner(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 128
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaPaperPlane"], {
@@ -226,7 +230,7 @@ var Banner = function Banner(_ref) {
     color: "#333",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 134
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -236,14 +240,14 @@ var Banner = function Banner(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaWordpress"], {
     size: "3rem",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 142
     },
     __self: this
   })))));
