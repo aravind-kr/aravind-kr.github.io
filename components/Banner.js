@@ -18,6 +18,11 @@ const styles = {
         left: '30%',
         top: '35%',
         width: '40%',
+        ['@media (max-width:780px)']: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
     },
     card: {
         minWidth: 275,

@@ -9,6 +9,7 @@ import {
     FaPaperPlane,
     FaWordpress,
 } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
@@ -20,6 +21,10 @@ const styles = {
         marginTop: '50px',
         marginBottom: '50px',
         width: '50%',
+        ['@media (max-width:780px)']: {
+            width: '90%',
+            marginLeft: '5%'
+        },
     },
     highlight: {
         fontSize: 18,
@@ -56,87 +61,90 @@ const styles = {
 
 const Contact = ({ classes }) => (
     <div className={classes.outerDiv} id="contact">
-        <div>
-            <FaAddressBook
-                size="3rem"
-                style={{
-                    marginBottom: '-8px',
-                }}
-            />
-            <a
-                className={classes.highlight}
-                style={{
-                    marginLeft: '10px',
-                    marginTop: '-5px',
-                }}
-            >
-                Contact
-            </a>
-        </div>
-        <Card className={classes.card}>
-            <CardContent>
-                <Typography variant="h5" className={classes.body}>
-                    <FaMapMarkedAlt
-                        style={{
-                            marginBottom: '-5px',
-                        }}
-                    />{' '}
-                    Pondicherry, India
-                </Typography>
-                <Typography variant="h5" className={classes.body}>
-                    <FaAt
-                        style={{
-                            marginBottom: '-5px',
-                        }}
-                    />{' '}
-                    kraravind1996<span className={classes.highlight}>@</span>
-                    gmail.com
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <a
-                    href="https://twitter.com/arvindsmvec"
+        <Fade bottom>
+            <div>
+                <FaAddressBook
+                    size="3rem"
                     style={{
-                        marginRight: '10px',
-                        marginLeft: '10px',
+                        marginBottom: '-8px',
                     }}
-                >
-                    <FaTwitterSquare size="3rem" />
-                </a>
+                />
                 <a
-                    href="https://github.com/aravind-kr/"
-                    style={{
-                        marginRight: '10px',
-                    }}
-                >
-                    <FaGithub size="3rem" color="#333" />
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/aravind-k-r-a1775baa/"
-                    style={{
-                        marginRight: '10px',
-                    }}
-                >
-                    <FaLinkedin size="3rem" />
-                </a>
-                <a
-                    href="#"
-                    style={{
-                        marginRight: '10px',
-                    }}
-                >
-                    <FaPaperPlane size="3rem" color="#333" />
-                </a>
-                <a
-                    href="https://krarvindblog.wordpress.com/"
+                    className={classes.highlight}
                     style={{
                         marginLeft: '10px',
+                        marginTop: '-5px',
                     }}
                 >
-                    <FaWordpress size="3rem" />
+                    Contact
                 </a>
-            </CardActions>
-        </Card>
+            </div>
+            <Card className={classes.card}>
+                <CardContent>
+                    <Typography variant="h5" className={classes.body}>
+                        <FaMapMarkedAlt
+                            style={{
+                                marginBottom: '-5px',
+                            }}
+                        />{' '}
+                        Pondicherry, India
+                    </Typography>
+                    <Typography variant="h5" className={classes.body}>
+                        <FaAt
+                            style={{
+                                marginBottom: '-5px',
+                            }}
+                        />{' '}
+                        kraravind1996
+                        <span className={classes.highlight}>@</span>
+                        gmail.com
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <a
+                        href="https://twitter.com/arvindsmvec"
+                        style={{
+                            marginRight: '10px',
+                            marginLeft: '10px',
+                        }}
+                    >
+                        <FaTwitterSquare size="3rem" />
+                    </a>
+                    <a
+                        href="https://github.com/aravind-kr/"
+                        style={{
+                            marginRight: '10px',
+                        }}
+                    >
+                        <FaGithub size="3rem" color="#333" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/aravind-k-r-a1775baa/"
+                        style={{
+                            marginRight: '10px',
+                        }}
+                    >
+                        <FaLinkedin size="3rem" />
+                    </a>
+                    <a  
+                        href="#"
+                        style={{
+                            marginRight: '10px',
+                        }}
+                    >
+                        <FaPaperPlane size="3rem" color="#333" />
+                    </a>
+                    <a
+                        href="https://krarvindblog.wordpress.com/"
+                        style={{
+                            marginLeft: '10px',
+                        }}
+                    >
+                        <FaWordpress size="3rem" />
+                    </a>
+                </CardActions>
+            </Card>
+        </Fade>
     </div>
 )
 

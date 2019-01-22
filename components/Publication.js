@@ -1,5 +1,6 @@
 import { withStyles } from '@material-ui/core/styles'
 import { FaAngleDoubleRight, FaScroll } from 'react-icons/fa'
+import Fade from 'react-reveal/Fade'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
@@ -11,6 +12,10 @@ const styles = {
         marginLeft: '25%',
         marginTop: '50px',
         width: '50%',
+        ['@media (max-width:780px)']: {
+            width: '90%',
+            marginLeft: '5%'
+        },
     },
     highlight: {
         fontSize: 18,
@@ -47,48 +52,51 @@ const styles = {
 
 const Publication = ({ classes }) => (
     <div className={classes.outerDiv} id="publication">
-        <div>
-            <FaScroll
-                size="3rem"
-                style={{
-                    marginBottom: '-8px',
-                }}
-            />
-            <a
-                className={classes.highlight}
-                style={{
-                    marginLeft: '10px',
-                    marginTop: '-5px',
-                }}
-            >
-                Publication
-            </a>
-        </div>
-        <Card className={classes.card}>
-            <CardHeader
-                classes={{
-                    title: classes.body,
-                    subheader: classes.subheader,
-                }}
-                action={
-                    <a href="https://ieeexplore.ieee.org/document/8085696">
-                        <IconButton>
-                            <FaAngleDoubleRight />
-                        </IconButton>
-                    </a>
-                }
-                title="Retail Price Analytic"
-                subheader="Mar 2017"
-            />
-            <CardContent>
-                <Typography variant="h5" className={classes.body}>
-                    Presented a paper titled “Retail price analytics using back
-                    propagation neural network and sentimental analysis” in the
-                    fourth international conference on signal processing,
-                    communication, and networking {"( ICSCN )"} at MIT, Chennai
-                </Typography>
-            </CardContent>
-        </Card>
+        <Fade bottom>
+            <div>
+                <FaScroll
+                    size="3rem"
+                    style={{
+                        marginBottom: '-8px',
+                    }}
+                />
+                <a
+                    className={classes.highlight}
+                    style={{
+                        marginLeft: '10px',
+                        marginTop: '-5px',
+                    }}
+                >
+                    Publication
+                </a>
+            </div>
+            <Card className={classes.card}>
+                <CardHeader
+                    classes={{
+                        title: classes.body,
+                        subheader: classes.subheader,
+                    }}
+                    action={
+                        <a href="https://ieeexplore.ieee.org/document/8085696">
+                            <IconButton>
+                                <FaAngleDoubleRight />
+                            </IconButton>
+                        </a>
+                    }
+                    title="Retail Price Analytic"
+                    subheader="Mar 2017"
+                />
+                <CardContent>
+                    <Typography variant="h5" className={classes.body}>
+                        Presented a paper titled “Retail price analytics using
+                        back propagation neural network and sentimental
+                        analysis” in the fourth international conference on
+                        signal processing, communication, and networking{' '}
+                        {'( ICSCN )'} at MIT, Chennai
+                    </Typography>
+                </CardContent>
+            </Card>
+        </Fade>
     </div>
 )
 
