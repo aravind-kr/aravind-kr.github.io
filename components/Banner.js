@@ -88,14 +88,14 @@ const Banner = ({ classes }) => (
                     >
                         Aravind
                     </a>
-                    ,<br />I work as a Fullstack Developer at{' '}
+                    ,<br />I am currently a Masters' Student at the{' '}
                     <a
                         className={classes.highlight}
-                        href="https://smartron.com/"
+                        href="https://unimelb.edu.au/"
                     >
-                        Smartron
+                        University of Melbourne
                     </a>
-                    . My Passion lies in Deep Learning and Natural Language
+                    . <br />My Passion lies in Deep Learning and Natural Language
                     Processing.
                 </Typography>
             </CardContent>

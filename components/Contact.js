@@ -87,7 +87,7 @@ const Contact = ({ classes }) => (
                                 marginBottom: '-5px',
                             }}
                         />{' '}
-                        Pondicherry, India
+                        Melbourne, Australia
                     </Typography>
                     <Typography variant="h5" className={classes.body}>
                         <FaAt
