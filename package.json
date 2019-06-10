@@ -26,7 +26,7 @@
     "babel-core": "^6.26.3",
     "bootstrap": "^4.2.1",
     "dotenv": "^6.2.0",
-    "next": "^7.0.2",
+    "next": "^8.1.1-canary.49",
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.3",
     "react-dom": "^16.7.0",
