@@ -23,20 +23,29 @@ function createPageContext() {
         sheetsRegistry: new SheetsRegistry(),
         // The standard class name generator.
         generateClassName: createGenerateClassName(),
-    };
+    }
 }
+
+let pageContext
 
 export default function getPageContext() {
     // Make sure to create a new context for every server-side request so that data
     // isn't shared between connections (which would be bad).
     if (!process.browser) {
-        return createPageContext();
+        return createPageContext()
     }
 
     // Reuse context on the client-side.
-    if (!global.__INIT_MATERIAL_UI__) {
-        global.__INIT_MATERIAL_UI__ = createPageContext();
+    // if (!global.__INIT_MATERIAL_UI__) {
+    //     global.__INIT_MATERIAL_UI__ = createPageContext();
+    // }
+
+    // return global.__INIT_MATERIAL_UI__;
+
+    // Reuse context on the client-side.
+    if (!pageContext) {
+        pageContext = createPageContext()
     }
 
-    return global.__INIT_MATERIAL_UI__;
+    return pageContext
 }
