@@ -1,18 +1,18 @@
 /* eslint-disable no-underscore-dangle */
 
-import { SheetsRegistry } from 'jss';
+import { SheetsRegistry } from 'jss'
 import {
     createMuiTheme,
     createGenerateClassName,
-} from '@material-ui/core/styles';
-import globalTheme from '../static/theme';
+} from '@material-ui/core/styles'
+import globalTheme from '../static/theme'
 
 const theme = createMuiTheme({
     ...globalTheme,
     typography: {
         useNextVariants: true,
     },
-});
+})
 
 function createPageContext() {
     return {
